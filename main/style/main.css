@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-color: #000;
+	background-image: url('../img/bg.jpg');
+	color: #21f396;
+	background-repeat: no-repeat;
+	background-position: top center;
+  background-size: contain;
+}
+
+.menu-1 {
+  position: absolute;
+  list-style-type: none;
+  margin: 150px 0 0;
+  padding: 0;
+}
+
+.menu-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  height: 50px;  
+  margin: 10px 0;
+  background: #210313;
+  border: 1px solid #500;
+  color: #f32156;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #311323, 0 0 40px #311323, 0 0 80px #311323;
+  text-shadow: 0 0 10px #f32156, 0 0 40px #f32156, 0 0 80px #f32156;
+  
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateX(-90%);
+  -moz-transform: translateX(-90%);
+  -ms-transform: translateX(-90%);
+  -o-transform: translateX(-90%);
+  transform: translateX(-90%);
+}
+
+.menu-2:hover {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.header {
+  background: #032113;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  position: absolute;
+  padding: 30px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 10px;
+  font-size: 40px;
+  cursor: default;
+  box-shadow: 0 0 10px #032113, 0 0 40px #032113, 0 0 80px #032113;
+  text-shadow: 0 0 10px #21f396, 0 0 40px #21f396, 0 0 80px #21f396;
+}
+
+.snake-border:nth-child(1) {
+  position: absolute;
+  box-shadow: 0 0 2px #21f396, 0 0 10px #21f396, 0 0 20px #21f396;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #032113, #21f396);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+.snake-border:nth-child(2) {
+  position: absolute;
+  box-shadow: 0 0 2px #21f396, 0 0 10px #21f396, 0 0 20px #21f396;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #032113, #21f396);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+
+.snake-border:nth-child(3) {
+  position: absolute;
+  box-shadow: 0 0 2px #21f396, 0 0 10px #21f396, 0 0 20px #21f396;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #032113, #21f396);
+  animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+.snake-border:nth-child(4) {
+  position: absolute;
+  box-shadow: 0 0 2px #21f396, 0 0 10px #21f396, 0 0 20px #21f396;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #032113, #21f396);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.main {
+  padding-top: 600px;
+}
+
+.desc {
+  background: #111;
+  color: #eee;
+  font-size: 20px;
+  text-shadow: 0 0 10px #eee, 0 0 40px #eee;
+}
+
+.main-info {
+  padding: 20px 30px;
+  cursor: default;
+}
+
+.info {
+  margin-bottom: 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fbb;
+  text-shadow: 0 0 10px #fbb, 0 0 40px #fbb, 0 0 80px #fbb;
+  transition: 1s;
+}
+
+.link:hover {
+  color: #f11;
+  text-shadow: 0 0 10px #f88, 0 0 40px #f88, 0 0 80px #f88;
+}
+
+.title {
+  font-family: 'Linux Libertine','Georgia','Times',serif;
+  color: #fa0;
+  text-shadow: 0 0 10px #fd0, 0 0 40px #fd0;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.punkts {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}

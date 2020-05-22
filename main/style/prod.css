@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(to right, #eee, #ddd) ;
+	background-size: cover;
+	font-family: sans-serif;
+	color: #333;
+}
+.bg {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.menu-1 {
+	position: absolute;
+	list-style-type: none;
+	margin: 150px 0 0;
+	padding: 0;
+}
+
+.menu-2 {
+	display: flex;
+	align-items: center;
+	width: 230px;
+	height: 50px;  
+	margin: 10px 0;
+	background: #ccc;
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #000;
+	border-radius: 4px;
+	cursor: pointer;
+
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	-webkit-transform: translateX(-90%);
+	-moz-transform: translateX(-90%);
+	-ms-transform: translateX(-90%);
+	-o-transform: translateX(-90%);
+	transform: translateX(-90%);
+}
+
+.menu-2:hover {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	-ms-transform: translateX(0%);
+	-o-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.main-title {
+	background: #ccc;
+	padding: 10px;
+	border: 2px solid #aaa;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 2px;
+}
+
+.main {
+	background: linear-gradient(to left, #eee, #ddd);
+	margin-top: 600px;
+	padding: 20px;
+}
+
+.main-info {
+	font-size: 20px;
+}
+
+.title {
+	margin-bottom: 30px;
+	font-size:  34px;
+	font-family: 'Linux Libertine','Georgia','Times',serif;
+}
+
+.small-title {
+	margin-bottom: 10px;
+}
+
+.text {
+	margin-bottom: 30px;
+}
+
+.main-text {
+	margin: 0 0 10px 20px;
+}
+
+.punkts {
+	margin: 0 0 10px 50px;
+}

@@ -1,0 +1,106 @@
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+}
+
+.demo .large-header {
+   background-image: url('../img/prog.gif');
+}
+
+.container-2 {
+   position: absolute;
+   width: 90%;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+   font-weight: 200;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   border: 1px solid #04ab04;
+   color: #04ab04;
+   background: rgba(4, 171, 4, 0.2);
+   text-shadow: 0 0 5px #04ab04;
+   box-shadow: 0 0 10px #04ab04;
+   margin-bottom: 500px;
+}
+
+.main {
+   font-size: 24px;
+   color: #04ab04;
+   border: 1px solid #04ab04;
+   border-radius: 10px;
+   background: rgba(4,171,4,0.2);
+   box-shadow: 0 0 10px #04ab04;
+   text-shadow: 0 0 5px #04ab04;
+}
+
+.menu-1 {
+   position: absolute;
+   list-style-type: none;
+   margin: 140px 0 0;
+   padding: 0;
+   top: 5%;
+}
+
+.menu-2 {
+   display: flex;
+   align-items: center;
+   width: 230px;
+   height: 50px;  
+   margin: 10px 0;
+   background: rgba(4, 171, 4, 0.3);
+   text-decoration: none;
+   font-size: 20px;
+   color: #04ab04;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #04ab04;
+   border-radius: 4px;
+   cursor: pointer;
+   text-shadow: 0 0 5px #04ab04;
+   box-shadow: 0 0 10px #04ab04;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -ms-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+   -webkit-transform: translateX(-90%);
+   -moz-transform: translateX(-90%);
+   -ms-transform: translateX(-90%);
+   -o-transform: translateX(-90%);
+   transform: translateX(-90%);
+}
+
+.menu-2:hover {
+   -webkit-transform: translateX(0%);
+   -moz-transform: translateX(0%);
+   -ms-transform: translateX(0%);
+   -o-transform: translateX(0%);
+   transform: translateX(0%);
+}
